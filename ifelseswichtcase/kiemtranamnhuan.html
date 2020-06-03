@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiểm tra năm nhuận</title>
+</head>
+
+<body>
+
+
+    <script>
+        let a = prompt('Nhập năm bạn muốn kiểm tra: ')
+        let ok;
+               
+        if (a % 4 == 0 && a % 100 != 0) {
+            ok = true;
+        } else {
+        if (a % 100 == 0 && a % 400 == 0) {
+            ok = true;
+       
+        } else {
+           ok = false;
+        }}
+       
+        alert(ok? a+ " là năm nhuận" : a+ " là năm không nhuận");
+
+    </script>
+</body>
+
+</html>
