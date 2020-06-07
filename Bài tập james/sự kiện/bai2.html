@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luyện tập cấu trúc điều kiện 02</title>
+</head>
+
+<body>
+    <script>
+        // Bài 1: Chuyển từ độ C sang độ F
+        // let C = +prompt('Nhập độ C: ');
+        // let F = C * 9 / 5 +32;
+        // alert(C + ' độ C bằng ' + F +' độ F');
+        // Bài 2: Chuyển từ mét sang feet
+        // let m = +prompt('Nhập m = ');
+        // let feet= m * 3.2808;
+        // alert(m + ' mét bằng '+feet + ' feet');
+        //Bài 3: Tính diện tích hình vuông cạnh a
+        // let a = +prompt('Nhập cạnh a =');
+        // let s = a*a;
+        // alert('Diện tích hình vuông là '+s);
+        // Bài 4: Tính diện tích hình chữ nhật 2 cạnh a,b
+        // let a = +prompt('Nhập chiều dài');
+        // let b = +prompt('Nhập chiều rộng');
+        // let s= a*b;
+        // alert('Diện tích hình chữ nhật là: '+s);
+        // Bài 5: Tính diện tích tam giác vuông 
+        // let a = +prompt('Nhập cạnh a');
+        // let b = +prompt('Nhập cạnh b');
+        // let s = a*b/2;
+        // alert(s);
+        // Bài 6: Giải phương trình bậc 1: ax+b=0
+        // let a = parseInt(prompt('Nhập a'));
+        // let b = parseInt(prompt('Nhập b'));
+
+        // if (a == 0) {
+        //     if (b == 0) alert("phuong trinh vo so nghiem");
+        //     else alert("phuong trinh vo nghiem");
+        // }
+        // else {
+        //     x = -b / a;
+        //     alert('Phuong trinh co 1 nghiem' +x);
+
+        // }
+        //Bài 7: Giải phương trình bậc 2
+        // a = parseInt(prompt('Nhập a'));
+        // b = parseInt(prompt('Nhập b'));
+        // c = parseInt(prompt('Nhập c'));
+        // delta = (b * b - 4 * a * c)
+        // if (delta == 0) {
+        //     x1 = -b / (2 * a);
+        //     alert('phuong trinh co nghiem kep x1 = x2 = '+  x1 );
+        // }
+        // else if (delta < 0) {
+        //     alert("phuong trinh vo nghiem");
+        // }
+        // else {
+        //     x1 = (-b - Math.sqrt(delta)) / (2 * a);
+        //     x2 = (-b + Math.sqrt(delta)) / (2 * a);
+        //     alert('phuong trinh co 2 nghiem  ' + x1 + ';' + x2);
+        // }
+        // Bài 8: Kiểm tra tuổi
+        // let a = prompt('Nhập tuổi');
+        // if (a>0 && a<120){
+        //     alert('Đây là tuổi của một người');
+        // } else {
+        //     alert('Đây k phải là tuổi của một người');
+        // }
+        //Bài 9: Nhập 3 cạnh tam giác và kiểm tra
+        // let a = +prompt('Nhập cạnh a= ');
+        // let b = +prompt('Nhập cạnh b= ');
+        // let c = +prompt('Nhập cạnh c= ');
+        // if (a+b>c && a+c>b && b+c>a) {
+        //     alert('3 canh cua tam giac')
+
+        // } else { alert(' Khong phai la 3 canh tam giac')
+
+        // }
+        // Bài 10: Chương trình tính giá điện. Giả sử giá tiền điện:
+        // Biết rằng 100 kWh đầu giá 1000, từ kWh 101 – 150 giá 1200, từ kWh 151 – 200 giá 2000, trên 200 giá 2200
+        // let Wh = +prompt('Nhập lượng điện đã sử dụng');
+        // let lev ;
+        // if (Wh >0 && Wh <= 100){lev = 1};
+        // if (Wh >100 && Wh <= 150){lev = 2};
+        // if (Wh >151 && Wh <= 200){lev = 3};
+        // if (Wh > 2000 ){lev = 4};
+        // switch (lev) {
+        //     case 1:
+        //         alert('Tiền điện phải trả là: '+ Wh*1000);
+        //         break;
+        //     case 2:
+        //     alert('Tiền điện phải trả là: '+ Wh*1200);
+        //         break;
+        //     case 3:
+        //     alert('Tiền điện phải trả là: '+ Wh*2000);
+        //         break;
+        //     case 4:
+        //     alert('Tiền điện phải trả là: '+ Wh*2200);
+        //         break;  
+        // }
+        // Bài 11: Tính thuế thu nhập cá nhân:
+        // let thunhap = +prompt('Nhập lương : ');
+        // let level;
+        // let thue;
+
+        // if (thunhap < 5 && thunhap > 0) { level = 0; }
+        // else if (thunhap >= 5 && thunhap < 10) {
+        //     level = 1;
+        // } else if (thunhap >= 10 && thunhap < 18) {
+        //     level = 2;
+        // } else if (thunhap >= 18 && thunhap < 32) {
+        //     level = 3;
+        // } else if (thunhap >= 32) {
+        //     level = 4;
+        // } else { alert('Nghèo quá') }
+
+        // switch (level) {
+        //     case 0:
+        //         alert('Thuế :' + (thue = 0));
+        //         break;
+        //     case 2: alert('Thuế :' + ((thue = thunhap * 5) / 100));
+        //         break;
+        //     case 3: alert('Thuế :' + ((thue = thunhap * 10) / 100));
+        //         break;
+        //     case 4: alert('Thuế :' + ((thue = thunhap * 30) / 100));
+        //         break;
+        //     default:
+        //         alert('Nghèo thế là hỏng rồi?');
+        //         break;
+        // }
+        // Bài 12: Tính lãi suất ngân hàng
+
+        // let von = +prompt('Nhập vốn')
+        // let thang = +prompt('Nhập số tháng vay')
+
+        // let laisuat = 0.3 / 100;
+        // let i;
+
+        // for (i = 0; i < thang; i++) {
+        //     von = von + von * 0.3 / 100;
+        // }
+        // alert('Số tiền phải trả sau ' + thang + ' tháng là ' + Math.ceil(von));
+
+
+    </script>
+
+
+</body>
+
+</html>
