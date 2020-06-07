@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good - fast - cheap</title>
+    <link rel="stylesheet" href="goodfastcheap.css">
+</head>
+
+<body>
+    <style>
+        .table tr td {
+            width: 150px;
+            text-align: center;
+            height: 100px;
+        }
+    </style>
+    <table class="table" border="1" cellspacing="1px" cellspadding="1px" style="width: 300px;">
+        <tr>
+            <td>
+                <label class="switch">
+                    <input id="good" type="checkbox" onclick="ko(this.id)">
+                    <span class="slider round"></span>
+                </label>
+            </td>
+            <td>GOOD</td>
+        </tr>
+        <tr>
+            <td><label class="switch">
+                    <input id="cheap" type="checkbox" onclick="ko(this.id)">
+                    <span class="slider round"></span> </label></td>
+            <td>CHEAP</td>
+        </tr>
+        <tr>
+            <td><label class="switch">
+                    <input id="fast" type="checkbox" onclick="ko(this.id)">
+                    <span class="slider round"></span> </label></td>
+            <td>FAST</td>
+        </tr>
+    </table>
+    <script>
+        function ko(id){
+            let good = document.getElementById('good').checked;
+            let fast = document.getElementById('fast').checked;
+            let cheap = document.getElementById('cheap').checked;
+            if( good && fast && cheap){
+                switch(id){
+                    case 'good':
+                    document.getElementById('fast').checked = false;
+                    break;
+                    case 'cheap':
+                    document.getElementById('good').checked = false;
+                    break;
+                    case 'fast':
+                    document.getElementById('cheap').checked = false;
+                    break;
+                }
+            }}
+       
+           
+           
+    
+    </script>
+
+
+
+</body>
+
+</html>

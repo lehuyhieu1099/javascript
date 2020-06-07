@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Ứng dụng do u love me </title>
+    <link rel="stylesheet" href="douloveme.css">
+</head>
+
+<body>
+
+    <form class="form">
+        <h2>Do you love me?</h2>
+        <input type="button" value="Yes" onclick="yes()" />
+        <input style="position: absolute;" id="no" type="button" value="No" onmouseover="onClickNo()" />
+    </form>
+    <script>
+        function yes() {
+            alert('Lovee u too <3')
+        }
+        function onClickNo() {
+            let a = document.getElementById('no');
+            const left = Math.random() * 1000 + 'px';
+            const top = Math.random() * 500 + 'px';
+            a.style.left = left
+            a.style.top = top
+        }
+    </script>
+
+</body>
+
+</html>

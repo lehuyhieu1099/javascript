@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sự kiện bàn phím</title>
+</head>
+
+<body onload="docReady()">
+    <img src="nobi.png" id="nobita" alt="nobita">
+    <script>
+        let nobi = document.getElementById('nobita');
+        function init() {
+            let nobi = document.getElementById('nobita');
+            nobi.style.position = 'relative';
+            nobi.style.left = '0px';
+            nobi.style.top ='0px';
+        }
+        function len() {
+            let nobi = document.getElementById('nobita');
+            nobi.style.top = parseInt(nobi.style.top) - 10 + 'px';
+        }
+        function xuong() {
+            let nobi = document.getElementById('nobita');
+            nobi.style.top = parseInt(nobi.style.top) + 10 + 'px';
+        }
+        function trai() {
+            let nobi = document.getElementById('nobita');
+            nobi.style.left = parseInt(nobi.style.left) - 10 + 'px';
+        }
+        function phai() {
+            let nobi = document.getElementById('nobita');
+            nobi.style.left = parseInt(nobi.style.left) + 10 + 'px';
+        }
+        function moveSelection(evt) {
+            console.log(evt.keyCode);
+            switch (evt.keyCode) {
+                case 37:
+                    trai();
+                    break;
+                case 39:
+                    phai();
+                    break;
+                case 38:
+                    len();
+                    break;
+                case 40:
+                    xuong();
+                    break;
+            }
+        }
+        function docReady() {
+    window.addEventListener('keydown', moveSelection);
+}
+    init(); 
+    </script>
+
+
+</body>
+
+</html>

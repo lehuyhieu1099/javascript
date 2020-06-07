@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính số ngày trong tháng</title>
+</head>
+
+<body>
+    <table style="border: 1px;">
+        <td> Nhập tháng bạn muốn kiểm tra:</td>
+        <td><input id="thang" type="text" style="width: 100px;"><br></td>
+        <td><input id="songay" type="text" style="width: 200px;"></td>
+        <td><button onclick="tinhngay()">Tính số ngày</button></td>
+    </table>
+    <script>
+        function tinhngay() {
+            let thang = +document.getElementById('thang').value
+            switch (thang) {
+                case 1:
+                    document.getElementById('songay').value = "31";
+                    break;
+                case 2:
+                    document.getElementById('songay').value = "28";
+                    break;
+                case 3:
+                    document.getElementById('songay').value = "31";
+                    break;
+                case 4:
+                    document.getElementById('songay').value = "30";
+                    break;
+                case 5:
+                    document.getElementById('songay').value = "31";
+                    break;
+                case 6:
+                    document.getElementById('songay').value = "30";
+                    break;
+                case 7:
+                    document.getElementById('songay').value = "31";
+                    break;
+                case 8:
+                    document.getElementById('songay').value = "31";
+                    break;
+                case 9:
+                    document.getElementById('songay').value = "30";
+                    break;
+                case 10:
+                    document.getElementById('songay').value = "31";
+                    break;
+                case 11:
+                    document.getElementById('songay').value = "30";
+                    break;
+                case 12:
+                    document.getElementById('songay').value = "31";
+                    break;
+
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>

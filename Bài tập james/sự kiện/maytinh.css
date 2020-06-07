@@ -1,0 +1,12 @@
+.table tr td {
+    border-collapse: collapse;
+    width: 300x;
+    border:white;
+    
+    
+}
+.but {
+    width: 30px;
+    height: 30px;
+    color: blue;
+}
